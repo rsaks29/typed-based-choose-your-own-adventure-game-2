@@ -193,4 +193,6 @@ while True:
         if r=='items':
             print(a[0]+" level 1 item")
             break
-print("thank you for playing this demo I am working on getting you the rest of this game out as soon as possible and hope you enjoyed")
+while True:
+    print("thank you for playing this demo I am working on getting you the rest of this game out as soon as possible and hope you enjoyed")
+    break
