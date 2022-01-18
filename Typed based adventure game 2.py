@@ -1,12 +1,3 @@
-# pseudo code
-# input
-# multi choice
-# character creation sheet
-# choose adventure
-# mana and different attacks for different characters
-# weakness and advantages for different class types
-# time and random number maybe later
-# item drops and looting
 import time,random
 while True:
     a=input("welcome to the choose your own adventure type game #2 type 'ready' when you are ready: ")
@@ -86,49 +77,49 @@ while True:
     print("type in the name of the ability to choose the ability: ")
     ability=input()
     if r1=='hacker' or r1=='1':
-        if ability=='cheat sheet':
+        if ability=='cheat sheet' or ability=='1':
             print("great choice")
             points=points-50000
             print(points)
             break
-        elif ability=='glitch the servers':
+        elif ability=='glitch the servers' or ability=='2':
             print("great choice")
             points=points-20000
             print(points)
             break
-        elif ability=='matrix dodge':
+        elif ability=='matrix dodge' or ability=='3':
             print("great choice")
             points=points-10000
             print(points)
             break
     elif r1=='fighter' or r1=='2':
-        if ability=='roundhouse kick':
+        if ability=='roundhouse kick' or ability=='1':
             print("great choice")
             points=points-10000
             print(points)
             break
-        elif ability=='street fighter hadouken':
+        elif ability=='street fighter hadouken' or ability=='2':
             print("great choice")
             points=points-30000
             print(points)
             break
-        elif ability=='uppercut':
+        elif ability=='uppercut' or ability=='3':
             print("great choice")
             points=points-5000
             print(points)
             break
     elif r1=='casual person' or r1=='3':
-        if ability=='punch':
+        if ability=='punch' or ability=='1':
             print("great choice")
             points=points-1000
             print(points)
             break
-        elif ability=="Man's best friend":
+        elif ability=="Man's best friend" or ability=='2':
             print("great choice")
             points=points-10000
             print(points)
             break
-        elif ability=='Fast car':
+        elif ability=='Fast car' or ability=='3':
             print("great choice")
             points=points-5000
             print(points)
@@ -169,17 +160,17 @@ while True:
         r=str(input("SELECT: "))
         print("FIGHT Menu 1."+str(ability))
         r=str(input("SELECT ABILITY: "))
-        if r==ability=='cheat sheet'or r==ability=='glitch the servers'or r==ability=='street fighter hadouken'or r==ability=='roundhouse kick'or r==ability=='uppercut'or r==ability=="Man's best friend"or r==ability=='punch':
+        if r==ability=='cheat sheet'or r==ability=='glitch the servers'or r==ability=='street fighter hadouken'or r==ability=='roundhouse kick'or r==ability=='uppercut'or r==ability=="Man's best friend"or r==ability=='punch' or ability=='1' or ability=='2' or ability=='3':
             print("you used the ability "+str(ability)+" it is quite effective")
             print("enemy health goes down 70/"+str(tutorial_enemy_health_full)+"enemies turn")
             print("the enemy attacks you with what seems like its claws and your health also goes down player health 70/"+str(player_health_full))
             print("to shorten down this tutorial you will be taken to the last part of the tutorial")
             break
-        elif r==ability=='matrix dodge':
+        elif r==ability=='matrix dodge' or ability=='3':
             print("you have done a pointless dodge enemy health:"+str(tutorial_enemy_health)+"/"+str(tutorial_enemy_health_full))
             print("because your only ability is to dodge there is no point in continuing this fight and we will get to the last part of the tutorial")
             break
-        elif r==ability=='Fast car':
+        elif r==ability=='Fast car' or ability=='3':
             print("you escaped the fight with your car and you suffocated your enemy with the smoke but because you")
             print("escaped you only get half the prize!")
             print("you are close to finishing the tutorial just one more step")
@@ -202,23 +193,4 @@ while True:
         if r=='items':
             print(a[0]+" level 1 item")
             break
-while True:
-    print("hello")
-    break
-while True:
-    time.sleep(1)
-    print("you have completed the tutorial rest is still in development and coming soon!")
-    break
-# gives items to the player and then open menu and add points and show items in the item section
-# add the option to just write the number to choose something finish the tutorial and
-# polish some of the options like adding enemy health in the player menu
-# and making other outcomes for the other abilities
-# and add rewards as well that are added to the points variable
-# add the item drops for the player that will be randomized from a random choice
-# list but because it is the tutorial it will be level 1 items
-# try to reply to comments on the other discord
-# and on github if people actually check the game out
-# something that should be added is the sword can be sold
-# add it that there can't be under 0 points
-# add the number input to all the times the character class is mentioned
-# add death for player
+print("thank you for playing this demo I am working on getting you the rest of this game out as soon as possible and hope you enjoyed")
